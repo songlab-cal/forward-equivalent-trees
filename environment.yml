@@ -1,0 +1,14 @@
+name: fitness-inference  # Replace with the desired name for your environment
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python>=3.11
+  - numpy
+  - ete3
+  - pandas
+  - seaborn
+  - jupyter
+  - ipykernel  # Optional, but useful for managing kernels in Jupyter
+  # - git+https://github.com/matsengrp/gcdyn.git  # Replace with the actual Git repository URL

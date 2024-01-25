@@ -1,0 +1,14 @@
+paper:
+  rcParams:
+    text.usetex: True
+    text.latex.preamble: '\usepackage{lmodern}'
+    axes.titlesize: 10
+    axes.labelsize: 10
+    xtick.labelsize: 10
+    ytick.labelsize: 10
+    legend.fontsize: 10
+  legend_info:
+    mode_order: ["full","FE"]
+    legend_labels: {"full":"Full","FE":"Forward Equivalent"}
+    sns_palette: "deep"
+  fig_dpi: 300
