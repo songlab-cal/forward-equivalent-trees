@@ -125,16 +125,3 @@ def clade_lengths_by_phenotype(tree):
             )
 
     return clade_lengths
-
-
-def forward_moment_equation(
-    state_space,
-    birth_rates: np.ndarray,
-    death_rates: np.ndarray,
-    mutation_rates: np.ndarray,
-    transition_matrix: np.ndarray,
-    t_min: float,
-    t_max: float,
-    dt: float,
-):
-    pass
