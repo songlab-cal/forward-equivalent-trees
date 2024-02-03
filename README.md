@@ -20,7 +20,7 @@ These modules are used by the jupyter notebooks.
 	* `DiscreteProcess`: This sub-classes `poisson.Process` and can be used by `bdms` for simulation from a constant-rate (birth, death, or mutation) process taking on a finite phenotype space.
 	* `CustomProcess`: This sub-classes `poisson.Process` and allows and user provided time- and state-dependent rates. In our code, we use this class to store birth, death, and mutation rates for the forward-equivalent model. the `FEModulator` class provides the `CustomProcess` initializer with the appropriate time- and state-dependent rate functions.
 	* `CustomMutator`: This sub-classes `mutators.Mutator`. It is initialized with an `FEModulator` object, which is then used to carry out time- and state-dependent mutation transitions according the the forward-equivalent model.
-* `utils.py`: This exports some utility functions, as well functions to compute all the tree statistics used for the distribution tests (in `distribution_tests.ipynb`.
+* `utils.py`: This exports some utility functions, as well functions to compute all the tree statistics used for the distribution tests (in `distribution_tests.ipynb`).
 
 
 
