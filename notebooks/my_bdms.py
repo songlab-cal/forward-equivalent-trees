@@ -91,6 +91,19 @@ class CustomMutator(mutators.Mutator):
         )[0]
         setattr(node, self.modulator.attr, new_phenotype)
 
+    def prob(self, attr1: float, attr2: float, log: bool = False) -> float:
+        r"""Probability of mutating from ``attr1`` to ``attr2``.
+
+        Args:
+            attr1: The initial attribute value.
+            attr2: The final attribute value.
+            log: If ``True``, return the log-probability.
+
+        Returns:
+            Mutation probability (or log probability).
+        """
+        raise NotImplementedError()
+
     def logprob(self, node: ete3.TreeNode) -> float:
         r"""Compute the log probability that a mutation effect on the parent of
         ``node`` gives ``node``.
