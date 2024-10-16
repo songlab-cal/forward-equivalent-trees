@@ -2,13 +2,13 @@ paper:
   rcParams:
     text.usetex: True
     text.latex.preamble: '\usepackage{lmodern}'
-    axes.titlesize: 9
-    axes.labelsize: 9
-    xtick.labelsize: 9
-    ytick.labelsize: 9
-    legend.fontsize: 9
+    axes.titlesize: 7
+    axes.labelsize: 7
+    xtick.labelsize: 7
+    ytick.labelsize: 7
+    legend.fontsize: 7
   legend_info:
     mode_order: ["full","FE"]
     legend_labels: {"full":"Full","FE":"Forward Equivalent"}
-    sns_palette: "deep"
+    sns_palette: ["#ffed6f", "#00008B"]
   fig_dpi: 300
