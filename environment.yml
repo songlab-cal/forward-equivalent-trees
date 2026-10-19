@@ -4,7 +4,8 @@ channels:
   - conda-forge
 
 dependencies:
-  - python>=3.11
+  # bdms-sim 0.3 depends on ete3, which doesn't support Python 3.13+
+  - python>=3.11,<3.13
   - numpy
   - pandas
   - seaborn
@@ -12,5 +13,6 @@ dependencies:
   - ipykernel  # Optional, but useful for managing kernels in Jupyter
   - pip
   - pip:
-    - bdms-sim
+    # the notebooks use the bdms-sim 0.3 API
+    - bdms-sim==0.3.1
   
